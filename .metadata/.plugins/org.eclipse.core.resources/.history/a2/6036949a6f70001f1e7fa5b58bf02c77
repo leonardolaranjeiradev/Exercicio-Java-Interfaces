@@ -1,0 +1,10 @@
+package model.entities;
+
+import java.util.Date;
+
+public class Parcelamento {
+	private Date dataVencimento;
+	private Double quantidade;
+	
+
+}

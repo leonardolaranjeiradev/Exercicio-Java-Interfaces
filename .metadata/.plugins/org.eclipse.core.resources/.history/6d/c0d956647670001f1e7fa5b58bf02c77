@@ -1,0 +1,10 @@
+package model.services;
+
+public class ServicoContrato {
+	private ServicoPagamentoOnline servicoPagamentoOnline;
+
+    // Injeta o serviço de pagamento online (ex: ServicoPayPal) no construtor
+    public ServicoContrato(ServicoPagamentoOnline servicoPagamentoOnline) {
+        this.servicoPagamentoOnline = servicoPagamentoOnline;
+    }
+}

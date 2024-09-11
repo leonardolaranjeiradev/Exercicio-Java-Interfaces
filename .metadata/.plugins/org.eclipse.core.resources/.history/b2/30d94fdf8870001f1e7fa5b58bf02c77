@@ -1,0 +1,33 @@
+package model.entities;
+
+import java.util.Date;
+
+public class Parcelamento {
+	private Date dataVencimento;
+	private Double quantidade;
+
+	public Parcelamento() {
+	}
+
+	public Parcelamento(Date dataVencimento, Double quantidade) {
+		this.dataVencimento = dataVencimento;
+		this.quantidade = quantidade;
+	}
+
+	public Date getDataVencimento() {
+		return dataVencimento;
+	}
+
+	public void setDataVencimento(Date dataVencimento) {
+		this.dataVencimento = dataVencimento;
+	}
+
+	public Double getQuantidade() {
+		return quantidade;
+	}
+
+	public void setQuantidade(Double quantidade) {
+		this.quantidade = quantidade;
+	}
+
+}

@@ -1,0 +1,25 @@
+package model.services;
+
+import java.time.LocalDate;
+
+import model.entities.Contrato;
+
+public class ServicoContrato {
+	private ServicoPagamentoOnline servicoPagamentoOnline;
+	
+	public ServicoContrato(ServicoPagamentoOnline servicoPagamentoOnline) {
+		this.servicoPagamentoOnline = servicoPagamentoOnline;
+	}
+	
+	public void processoDeContrato(Contrato contrato, int meses) {
+		
+		double parcelaBruta = contrato.getValorContrato() / meses;
+		
+		for (int i = 1; i <= meses; i++ ) {
+			LocalDate vencimento = contrato.getDataContrato().plusMonths(i);
+			
+			double taxa = servicoPagamentoOnline.taxaPagamento(parcelaBruta, i);
+		}
+	}
+	
+}

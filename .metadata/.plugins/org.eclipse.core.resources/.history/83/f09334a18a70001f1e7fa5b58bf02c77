@@ -1,0 +1,16 @@
+package model.services;
+
+import model.entities.Contrato;
+
+public class ServicoContrato {
+	private ServicoPagamentoOnline servicoPagamentoOnline;
+	
+	public ServicoContrato(ServicoPagamentoOnline servicoPagamentoOnline) {
+		this.servicoPagamentoOnline = servicoPagamentoOnline;
+	}
+	
+	public void processoDeContrato(Contrato contrato, int months) {
+		
+	}
+	
+}

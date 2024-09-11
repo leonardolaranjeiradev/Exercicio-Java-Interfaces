@@ -1,0 +1,20 @@
+package model.services;
+
+public class ServicoPayPal implements ServicoPagamentoOnline{
+	
+	private static final double TAXA_PAGAMENTO = 0.02; 
+    private static final double JUROS_MENSAL = 0.01; 
+
+	@Override
+	public double taxaPagamento(double valor, int meses) {
+		
+		return valor * TAXA_PAGAMENTO;
+	}
+
+	@Override
+	public double juros(double valor, int meses) {
+		
+		return valor * JUROS_MENSAL;
+	}
+
+}

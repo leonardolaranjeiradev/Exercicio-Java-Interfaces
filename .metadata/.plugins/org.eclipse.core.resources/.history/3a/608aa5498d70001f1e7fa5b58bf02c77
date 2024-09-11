@@ -1,0 +1,19 @@
+package model.services;
+
+public class ServicoPayPal implements ServicoPagamentoOnline{
+	
+	
+
+	@Override
+	public double taxaPagamento(double valor, int meses) {
+		
+		return valor * TAXA_PAGAMENTO;
+	}
+
+	@Override
+	public double juros(double valor) {
+		
+		return valor * JUROS_MENSAL;
+	}
+
+}
